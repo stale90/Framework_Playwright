@@ -4,7 +4,6 @@ Changed - 10 June 2026
 3. success - rename method verifyTextFull to verifyText , 
 4. prepare new excel method writeRecordDataToExcel1
 
-
 Framework Related 
 https://github.com/mnovitskyi/sauce-demo-playwright/blob/main/pages/loginPage.ts
 https://github.com/msoriginal/SalesforceProject/blob/main/pageObjects/BasePage.ts
@@ -92,11 +91,14 @@ Install and Command - Playwright Framework
 
 --------------------------------GIT Push---------
 
-#git checkout main
+#git init
 #git add .
 #git commit -m "Mandatory Commit message"
+#git branch -M main
+#git remote add origin 
 #git push origin main
 #git pull
+
 
 # 2. Add all changes
 git add .
