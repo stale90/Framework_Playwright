@@ -1,0 +1,130 @@
+Changed - 10 June 2026
+1. Fail - remove excel file name from global setup > Need to validate >> it creating multiple Excel file
+2. simplify datamap to array conversion in validation fixture > Need to see if break anything
+3. success - rename method verifyTextFull to verifyText , 
+4. prepare new excel method writeRecordDataToExcel1
+
+
+Framework Related 
+https://github.com/mnovitskyi/sauce-demo-playwright/blob/main/pages/loginPage.ts
+https://github.com/msoriginal/SalesforceProject/blob/main/pageObjects/BasePage.ts
+
+// Shared Folder : \\172.16.8.11\Services\Shailendra Tale
+\\172.16.8.11\Services\Shailendra Tale\Key Reports\RSK Reports- 03 June 2026
+----------------------------
+Git Url
+https://github.com/stale90/Framework_Playwright.git
+
+
+----------------------------
+1. Install Node.js and VS Code Editor.
+2. Create one random root folder.
+3. Open folder in VSCode
+4. Open terminal in VSCode
+5. Run command > npm install playwright@latest
+6. Create desired framework folder structure -
+        src code folder > config, data, locator, pages, reusable, tests, types
+        other folder >  allure-results, excel-report, resources, test-data
+        some files > .env file, tsconfig.json, framework-notes.txt
+7. Place Utility files in Reusable folder : Actions,ExcelUtility,Helper,Utility
+8. Place Configuration file in Config Folder: GlobalSetup, Logger, PlayWrightConfig, TestSetup
+9. Extention Used - Allure Support, Playwright Test for VSCode, vscode-icons
+
+
+> ---------Setup & Generate Allure------------------
+Allure Report --
+Allure is Java based Reporting Tool
+> Install Java on Machine
+> Set JAVA_HOME  and Path as %JAVA_HOME%/bin
+
+> Install Allure
+npm install -D allure-playwright
+npm install -g allure-commandline
+npm install -g allure-js-commons
+
+> Install Allure support VS extension
+> Configure playwright.config.ts file Reporter -
+  reporter:[[ "allure-playwright", { resultsDir: reportPaths.get('allure') }],] 
+
+
+Commands -
+Output folder -> 
+allure generate ./allure-results/06-19-2026/06-19-2026-12_44_31 -o report/allure-report --clean
+Single Html File -> 
+allure generate --single-file ./report/allure-results/06-24-2026/06-24-2026-17_34_01 -o report/allure-report --clean
+doubleClick or command to open> npx allure open ./allure-report
+
+Single Html File > allure generate --single-file .allure-results/06-19-2026/06-19-2026-12_44_31 --clean
+
+report/allure-results/06-24-2026/06-24-2026-17_34_01
+allure-results\05-25-2026\05-25-2026-14_15_02
+--------------------- 
+npm run scripts
+
+ "scripts": {
+    "test:psy": "npx playwright test --grep @psy",
+    "test:psy-e2e": "npx playwright test PSYRegistrationTest.spec",
+    "test:psy-val": "npx playwright test PSYValidationTest.spec",
+    "test:ded-e2e": "npx playwright test DEDRegistrationTest.spec"
+  },
+
+  Run command - npm run test:psy
+-----------------------------------------------------------------------
+  Jenkins
+-----------------------------------------------------------------------
+1. Download jenkins.war file from official website
+2. Navigate to folder where war file stored.
+3. Run  > java -jar jenkins.war --enable-future-java -httpPort=8080
+
+*************************************************************************
+
+
+
+Install and Command - Playwright Framework
+
+1. Install Node in the system and VS Code
+2. Open folder in VSCode
+3. run>  npm init -y
+4. run>  npm install -D playwright @playwright/test typescript ts-node @cucumber/cucumber
+5. run>  npm install dotenv
+6. run>  npm install -D allure-playwright allure-commandline
+7. run>  npx playwright install  
+
+--------------------------------GIT Push---------
+
+#git checkout main
+#git add .
+#git commit -m "Mandatory Commit message"
+#git push origin main
+#git pull
+
+# 2. Add all changes
+git add .
+
+# 3. Commit
+git commit -m "Add dynamic Allure reporting with dated folders"
+
+# 4. Push
+git push origin main
+
+---------------------------------
+
+---------------------------Prompt to generate  BasePage Actions------------
+
+Read below function format which contains click action code in playwright - 
+
+ // Method 6 : Click on Element like Button,Link etc.
+    async click(element: Locator, desc: string): Promise<void> {
+        await test.step(`Click on "${desc}" `, async () => {
+            await expect(element).toBeEnabled({ timeout: 10000 });
+            await element.click();
+        });
+    }
+
+
+Generate at least 30 methods which we can use as actions on different type of web element in same format and consider below pointers
+1. Function arguments can be changed based on action requirement.
+2. Promise return can be vary based on requirement of function
+
+----------App RSK---
+Your Application number P26HE100113 is generated successfully.
