@@ -13,6 +13,7 @@ https://github.com/msoriginal/SalesforceProject/blob/main/pageObjects/BasePage.t
 ----------------------------
 Git Url
 https://github.com/stale90/Framework_Playwright.git
+string - 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
 
 
 ----------------------------
@@ -50,7 +51,7 @@ Commands -
 Output folder -> 
 allure generate ./allure-results/06-19-2026/06-19-2026-12_44_31 -o report/allure-report --clean
 Single Html File -> 
-allure generate --single-file ./report/allure-results/06-24-2026/06-24-2026-17_34_01 -o report/allure-report --clean
+allure generate --single-file ./report/allure-results/06-24-2026/06-24-2026-17_34_01 -o allure-report --clean
 doubleClick or command to open> npx allure open ./allure-report
 
 Single Html File > allure generate --single-file .allure-results/06-19-2026/06-19-2026-12_44_31 --clean
