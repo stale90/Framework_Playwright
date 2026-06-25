@@ -10,11 +10,6 @@ https://github.com/msoriginal/SalesforceProject/blob/main/pageObjects/BasePage.t
 
 // Shared Folder : \\172.16.8.11\Services\Shailendra Tale
 \\172.16.8.11\Services\Shailendra Tale\Key Reports\RSK Reports- 03 June 2026
-----------------------------
-Git Url
-https://github.com/stale90/Framework_Playwright.git
-string - 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
-
 
 ----------------------------
 1. Install Node.js and VS Code Editor.
