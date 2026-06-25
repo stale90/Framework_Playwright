@@ -52,7 +52,6 @@ doubleClick or command to open> npx allure open ./allure-report
 Single Html File > allure generate --single-file .allure-results/06-19-2026/06-19-2026-12_44_31 --clean
 
 report/allure-results/06-24-2026/06-24-2026-17_34_01
-allure-results\05-25-2026\05-25-2026-14_15_02
 --------------------- 
 npm run scripts
 
