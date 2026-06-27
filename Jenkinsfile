@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'windows' }   // Run on a Windows agent
+    agent any   // Run on a Windows agent
 
     stages {
         stage('Clean Old Reports') {
