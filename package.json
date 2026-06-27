@@ -6,6 +6,7 @@
   "scripts": {
     "test:rsk": "npx playwright test --grep \"@psy|@ded\"",
     "test:psy": "npx playwright test --grep @psy",
+    "test:demo": "npx playwright test --grep @demo",
     "test:psy-e2e": "npx playwright test PSYRegistrationTest.spec",
     "test:psy-val": "npx playwright test PSYValidationTest.spec",
     "test:ded": "npx playwright test --grep @ded",
